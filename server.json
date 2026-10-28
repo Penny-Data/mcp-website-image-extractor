@@ -1,0 +1,17 @@
+{
+  "name": "io.github.Penny-Data/mcp-website-image-extractor",
+  "description": "Extract all images from any web page via the Apify actor pennydata/website-image-extractor.",
+  "repository": { "url": "https://github.com/Penny-Data/mcp-website-image-extractor", "source": "github" },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registry_type": "npm",
+      "identifier": "@apify/actors-mcp-server",
+      "version": "latest",
+      "runtime_hint": "npx",
+      "package_arguments": [
+        { "type": "named", "name": "--actors", "value": "pennydata/website-image-extractor" }
+      ]
+    }
+  ]
+}
