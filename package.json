@@ -1,0 +1,7 @@
+{
+  "name": "mcp-website-image-extractor",
+  "version": "1.1.0",
+  "type": "module",
+  "bin": { "mcp-website-image-extractor": "server.mjs" },
+  "license": "MIT"
+}

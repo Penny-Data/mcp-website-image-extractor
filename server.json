@@ -1,16 +1,17 @@
 {
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Penny-Data/mcp-website-image-extractor",
-  "description": "Extract all images from any web page via the Apify actor pennydata/website-image-extractor.",
-  "repository": { "url": "https://github.com/Penny-Data/mcp-website-image-extractor", "source": "github" },
+  "title": "Website Image Extractor",
+  "description": "Extract and download all images from any web page via the Apify Store actor pennydata/website-image-extractor.",
+  "repository": {"url": "https://github.com/Penny-Data/mcp-website-image-extractor", "source": "github"},
   "version": "1.0.0",
   "packages": [
     {
-      "registry_type": "npm",
-      "identifier": "@apify/actors-mcp-server",
-      "version": "latest",
-      "runtime_hint": "npx",
-      "package_arguments": [
-        { "type": "named", "name": "--actors", "value": "pennydata/website-image-extractor" }
+      "registryType": "oci",
+      "identifier": "ghcr.io/penny-data/mcp-website-image-extractor:1.0.0",
+      "transport": {"type": "stdio"},
+      "environmentVariables": [
+        {"name": "APIFY_TOKEN", "description": "Your Apify API token (https://console.apify.com/settings/integrations)", "isRequired": true, "isSecret": true}
       ]
     }
   ]
